@@ -1,0 +1,24 @@
+We've created a basic .Net 5 project using an in-memory database. The data in the database is reset each time the application is run. 
+There are two entities - Staff Members and Timesheets. Each staff member can have zero or many timesheets. 
+There is also one example controller and endpoint.
+
+The task is to create an API that allows:
+* Getting a list of staff members.
+* Recording clock ins for individual staff members.
+* Recording clock outs for individual staff members.
+
+Create/implement any classes, interfaces, folders etc that you need for this.
+
+Use Git to commit your work as often as makes sense. 
+Try not to spend more than 1-2 hours total on the task (of course if you've got questions and it takes me a while to get back to you then that's OK. We just don't want you to spend your entire day on this).
+
+Please contact Gus with any questions - I'm available on 021 139 3994 and I should be free all weekend.
+
+Notes:
+* The example endpoint uses HTTP (not HTTPS), and this is fine for the rest of the API as well.
+* Don't worry about implementing any authentication or authorization layers.
+* The data is reset on each run of the application, and the unique IDs of the seed data are randomised. 
+  The task is about how the API is designed and implemented, so don't worry about making data persistant between each run.
+  
+  
+As discussed with Rich, please have this back to us by Monday, and we'll be in contact on Monday or Tuesday

@@ -5,6 +5,9 @@ using System;
 
 namespace LoadedTechnicalTask
 {
+    /// <summary>
+    /// Generates database seed data.
+    /// </summary>
     public class DataGenerator
     {
         public static void Initialize(IServiceProvider serviceProvider)
