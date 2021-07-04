@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LoadedTechnicalTask.Dto
 {
@@ -10,7 +11,7 @@ namespace LoadedTechnicalTask.Dto
         /// <summary>
         /// A unique identifier for this staff member
         /// </summary>
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         /// <summary>
         /// This staff member's name

@@ -18,7 +18,7 @@ namespace LoadedTechnicalTask.Helpers
         {
             return new TimesheetDto()
             {
-                Id = timesheet.Id.ToString(),
+                Id = timesheet.Id,
                 ClockOut = timesheet.ClockOut?.ToString(TIME_FORMAT, CultureInfo.InvariantCulture),
                 ClockIn = timesheet.ClockIn.ToString(TIME_FORMAT, CultureInfo.InvariantCulture)
             };
@@ -33,7 +33,7 @@ namespace LoadedTechnicalTask.Helpers
         {
             return new Timesheet()
             {
-                Id = string.IsNullOrWhiteSpace(timesheetDto.Id) ? Guid.NewGuid() : Guid.Parse(timesheetDto.Id),
+                Id = timesheetDto.Id,
                 ClockOut = DateTimeOffset.ParseExact(timesheetDto.ClockOut, TIME_FORMAT, CultureInfo.InvariantCulture),
                 ClockIn = DateTimeOffset.ParseExact(timesheetDto.ClockIn, TIME_FORMAT, CultureInfo.InvariantCulture)
             };

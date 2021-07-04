@@ -16,7 +16,7 @@ namespace LoadedTechnicalTask.Helpers
         {
             return new StaffMemberDto()
             {
-                Id = staffMember.Id.ToString(),
+                Id = staffMember.Id,
                 Name = staffMember.Name,
                 Timesheets = staffMember.Timesheets.Select(e => e.ToTimesheetDto()).ToList<TimesheetDto>()
             };
@@ -31,7 +31,7 @@ namespace LoadedTechnicalTask.Helpers
         {
             return new StaffMember()
             {
-                Id = string.IsNullOrWhiteSpace(staffMemberDto.Id) ? Guid.NewGuid() : Guid.Parse(staffMemberDto.Id),
+                Id = staffMemberDto.Id,
                 Name = staffMemberDto.Name,
                 Timesheets = staffMemberDto.Timesheets.Select(e => e.ToTimesheet()).ToList()
             };

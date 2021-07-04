@@ -12,7 +12,7 @@ namespace LoadedTechnicalTask.Dto
         /// A unique identifier for this timesheet
         /// </summary>
         [Required]
-        public String Id { get; set; }
+        public Guid Id { get; set; }
 
         /// <summary>
         /// The time that the staff member clocked in for this shift
